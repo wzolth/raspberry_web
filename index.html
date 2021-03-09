@@ -1,0 +1,60 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Raspberry</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="script.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<!--<a href="sc.php"> PRESS</a>-->
+<h2 align="center">Hello! This is a web page located on rasberry. What do you want to do?</h2>
+<dialog id="dialog">
+<p><button id="closeDialog">Close</button></p>
+  </dialog>
+<dialog id="waiting_dialog" class="dialog_wait">
+<p><button id="closewaitingDialog">Close</button></p>
+<p align="center">Please wait...</p>
+  </dialog>
+<button  id="but"  class="but" align="center"  onclick="com()">Make photo from raspberry</button>
+
+<a href="https://github.com/"><h3 align="center">GitHub link</h3>
+</body>
+</html>
+<style>
+.but{
+width:300px;
+height:100px;
+background-color:FFB6C1;
+position: relative;
+left: 50%;
+font-size: 16px;
+transform: translate(-50%, 0);
+}
+
+.but:hover{
+        color: fff;
+        background: 333;
+        
+}
+body{
+background-color:FFE4C4;
+}
+.dialog_wait{
+width: 200px;
+height:100px;
+background-color:FFB6C1;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+ dialog {
+<!--    background-image: url(http://menelai.ddns.net:888/photo.jpg);-->
+background-size: cover;
+    width: 500px; 
+height:500px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+   }
+
+</style>
